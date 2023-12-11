@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.HelloController">
+    <children>
+        <AnchorPane layoutY="92.0" prefHeight="21.0" prefWidth="800.0" style="-fx-background-color: #6495ED;" />
+        <Text layoutX="214.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Job Offering Details" wrappingWidth="439.7366943359375">
+            <font>
+                <Font name="Berlin Sans FB" size="48.0" />
+            </font>
+        </Text>
+        <TextField fx:id="compname" layoutX="89.0" layoutY="193.0" prefHeight="26.0" prefWidth="276.0" promptText="Company Name" />
+        <TextField fx:id="jrole" layoutX="89.0" layoutY="273.0" prefHeight="26.0" prefWidth="276.0" promptText="Job Role" />
+        <TextField fx:id="salrang" layoutX="89.0" layoutY="359.0" prefHeight="26.0" prefWidth="276.0" promptText="Salary Range" />
+        <TextField fx:id="loca" layoutX="457.0" layoutY="359.0" prefHeight="26.0" prefWidth="276.0" promptText="Location ( online / offline )" />
+        <TextField fx:id="experi" layoutX="457.0" layoutY="193.0" prefHeight="26.0" prefWidth="276.0" promptText="Experience Required" />
+        <TextField fx:id="skill" layoutX="457.0" layoutY="273.0" prefHeight="26.0" prefWidth="276.0" promptText="Skills Required" />
+        <Button layoutX="156.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#onAddClicked" prefHeight="22.0" prefWidth="115.0" text="ADD">
+            <font>
+                <Font name="Berlin Sans FB" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="537.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#onRemoveClicked" prefHeight="22.0" prefWidth="115.0" text="REMOVE">
+            <font>
+                <Font name="Berlin Sans FB" size="18.0" />
+            </font>
+        </Button>
+      <Label fx:id="welcomeText1" layoutX="133.0" layoutY="507.0" prefHeight="18.0" prefWidth="162.0" />
+      <Label fx:id="welcomeText3" layoutX="518.0" layoutY="507.0" prefHeight="18.0" prefWidth="154.0" />
+    </children>
+</AnchorPane>
